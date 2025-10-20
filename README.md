@@ -24,7 +24,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
  IIS (Internet Information Services) -  required as the web server (if using Windows).
 
-- Item 2
+ Web Platform Installer -  Helpful tool to install IIS, PHP, and MySQL easily.
+
 - Item 3
 - Item 4
 - Item 5
