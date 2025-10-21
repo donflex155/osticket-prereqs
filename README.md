@@ -6,10 +6,6 @@
 This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
 
 
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
-
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
@@ -18,7 +14,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Operating Systems Used </h2>
 
-- Windows 10</b> (21H2)
+- Windows 11</b> (21H2)
 
 <h2>List of Prerequisites</h2> 
 
@@ -28,12 +24,10 @@ It illustrates how IIS interacts with a web browser (e.g., Microsoft Edge) and h
 
 2. Web Platform Installer -  Helpful tool to install IIS, PHP, and MySQL easily.
 
-3. Install C++ Redistributable — Required because PHP or MySQL components depend on it.
+3. Install Microsoft Visual C++ Redistributable on Windows 11 Required, because PHP or MySQL components depend on it.
 
-- Item 4
-- Item 5
 
-- 
+ 
 <img width="1793" height="928" alt="image" src="https://github.com/user-attachments/assets/86c616bb-66c2-4744-bcd6-1035a770468e" />
 
 Here’s the diagram image showing how IIS (Internet Information Services) interacts with the web browser (Microsoft Edge) on Windows 11, followed by an illustrated step-by-step demonstration of the configuration setup.
@@ -78,11 +72,12 @@ Once completed, the IIS web page source file will appear exactly like the diagra
 <img width="777" height="231" alt="image" src="https://github.com/user-attachments/assets/a2a1d0d3-c701-4242-9cdb-ad3e8656f433" />
 
 
-After activation, IIS (Internet Information Services) automatically creates a default web folder, allowing you to host and access files directly through your browser.
-To view and modify the default IIS web page, follow these steps:
-Open Notepad and run it as Administrator. Inside Notepad, click File → Open.
-Navigate to the following path: C:\inetpub\wwwroot\
-At the bottom-right corner of the dialog box, select All Files to display every file type. Open the file named iisstart.htm — this is the IIS web page source file.
-From here, you can create, edit, or configure the content displayed on the IIS home page. After editing, click Save, 
-Once completed, the IIS web page source file will appear exactly like the diagram shown, representing how the IIS web page source file looks like.
-
+How to Install Microsoft Visual C++ Redistributable on Windows 11
+Step 1: Download the Redistributable
+(1).Visit the Official Microsoft Download Page: Go to the Microsoft Visual C++ Redistributable Downloads page. (!!) Select the Appropriate Version: For most applications, download the x64 version for 64-bit systems or the x86 version for 32-bit systems. Click on the corresponding link to start the download.
+Step 2: Run the Installer. (!) Locate the Downloaded File: Navigate to your Downloads folder and find the installer file (e.g., vc_redist.x64.exe).
+(!!). Execute the Installer: Double-click the installer file to run it. (!!!). Accept the License Agreement: In the setup window, read and accept the license terms, then click Install. (!V). Wait for Installation to Complete: The installation process will take a few minutes. Once finished, click Close.
+Step 3: Verify Installation. (!). Open Control Panel: Press Windows + R, type appwiz.cpl, and press Enter. (!!). Check Installed Programs: In the Programs and Features window, look for entries like: *Microsoft Visual C++ 2015–2022 Redistributable (x64), *Microsoft Visual C++ 2015–2022 Redistributable (x86)
+If these are listed, the installation was successful.
+Step 4: Restart Your Computer (Optional). To ensure all components are properly initialized, it's recommended to restart your computer.
+By following these steps, you will have successfully installed the Microsoft Visual C++ Redistributable on your Windows 11 system, enabling applications that depend on it to run correctly.
